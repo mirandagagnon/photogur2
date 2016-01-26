@@ -1,0 +1,22 @@
+<h1>Add A New Photo</h1>
+
+  <% form_for @photo do |f| %>
+
+    <div class = "form_field">
+      <%= f.label :photographer %>
+      <%= f.text_field :photographer %>
+    </div>
+
+    <div class = "form_field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class = "form_field">
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </div>
+
+    <%= f.submit %>
+
+  <% end %>
