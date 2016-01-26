@@ -1,8 +1,8 @@
 <h1>Edit a Photo</h1>
 
-<p><%= link_to "Back to Photo", show_photo_path %></p>
+<p><%= link_to "Back to Photo", photo_path(@photo) %></p>
 
-  <%= form_for @picture do |f| %>
+  <%= form_for @photo do |f| %>
     <div class = "form_field">
       <%= f.label :photographer %>
       <%= f.text_field :photographer %>
