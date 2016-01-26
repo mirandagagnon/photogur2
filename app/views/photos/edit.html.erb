@@ -1,0 +1,23 @@
+<h1>Edit a Photo</h1>
+
+<p><%= link_to "Back to Photo", show_photo_path %></p>
+
+  <%= form_for @picture do |f| %>
+    <div class = "form_field">
+      <%= f.label :photographer %>
+      <%= f.text_field :photographer %>
+    </div>
+
+    <div class = "form_field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class = "form_field">
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </div>
+
+    <%= f.submit %>
+
+  <% end %>

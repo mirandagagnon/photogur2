@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "photos#index"
   #Seven Restful routes
 
   #get '/photos' => 'photos#index' (show me all the photos in a list)

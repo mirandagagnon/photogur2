@@ -1,4 +1,6 @@
 <h1>Photo</h1>
 
+<p><%= link_to "Back to all Photos", photo_path %> | <%= link_to "Edit Photo", edit_photo_path %> </p>
+
 <p><%= @photo.title %>, <%= @photo.photographer %></p>
 <img src="<%= @photo.url %>">
