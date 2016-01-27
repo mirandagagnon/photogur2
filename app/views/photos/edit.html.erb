@@ -1,23 +1,26 @@
-<h1>Edit a Photo</h1>
+<div id="edit-photo">
+<h2>Edit a Photo</h2>
 
 <p><%= link_to "Back to Photo", photo_path(@photo) %></p>
 
   <%= form_for @photo do |f| %>
     <div class = "form_field">
       <%= f.label :photographer %>
-      <%= f.text_field :photographer %>
+      <%= f.text_field :photographer, :class => 'text_field' %>
     </div>
 
     <div class = "form_field">
       <%= f.label :title %>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :class => 'text_field' %>
     </div>
 
     <div class = "form_field">
       <%= f.label :url %>
-      <%= f.text_field :url %>
+      <%= f.text_field :url, :class => 'text_field' %>
     </div>
 
-    <%= f.submit %>
+    <%= f.submit 'Update Photo', :class => 'submit_class' %>
 
   <% end %>
+
+</div>

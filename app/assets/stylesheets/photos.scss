@@ -1,3 +1,199 @@
-// Place all the styles related to the photos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+  box-sizing: border-box;
+	font-size: 100%;
+  background-image: url("background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+.page-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#header{
+  background-color: black;
+  opacity: 0.7;
+  top:0;
+	left:0;
+	right:0;
+  position: fixed;
+}
+
+#header h1{
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 1.5%;
+  float: right;
+  margin-right: 77%;
+
+}
+
+#header i{
+  font-size: 2.5rem;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: #fa056d;
+}
+
+#new-photo a, #new-photo a:visited{
+  font-family: 'Raleway', cursive;
+  font-size: 1.3rem;
+  margin-left: 90%;
+  margin-bottom: -1%;
+  text-decoration: none;
+  color: white;
+}
+
+#new-photo a:hover{
+  color: #fa056d;
+}
+
+#all-photos{
+  margin-top: 85%;
+}
+
+#all-photos h2{
+  font-family: 'Lobster', cursive;
+  color: #fa056d;
+  font-size: 2.5rem;
+
+}
+
+#all-photos p{
+  font-family: 'Raleway', cursive;
+  font-size: 1.3rem;
+  color: black;
+
+}
+
+#all-photos img{
+  width: 30%;
+
+}
+
+#edit-photo{
+  background-color: black;
+  opacity: 0.8;
+  padding-bottom: 3%;
+
+}
+
+#edit-photo h2{
+  font-family: 'Lobster', cursive;
+  color: #fa056d;
+  font-size: 2.5rem;
+  margin-top: 250px;
+  text-align: center;
+
+}
+
+
+#edit-photo a, #edit-photo a:visited{
+  font-family: 'Raleway', cursive;
+  font-size: 1.3rem;
+  padding-left: 80%;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+#edit-photo a:hover{
+  color: #fa056d;
+}
+
+#new-photo{
+  background-color: black;
+  opacity: 0.8;
+  padding-bottom: 3%;
+
+}
+ #new-photo h2{
+   font-family: 'Lobster', cursive;
+   color: #fa056d;
+   font-size: 2.5rem;
+   margin-top: 250px;
+   text-align: center;
+
+ }
+
+.form_field{
+  font-size: 1.5rem;
+  font-family:'Raleway', cursive;
+  color: white;
+  padding-left: 10%;
+  padding-bottom: 3%;
+
+ }
+
+ .text_field{
+   width:20%;
+   font-size: 1.2rem;
+   margin-left: 1.5%;
+ }
+
+.submit_class{
+  width: 30%;
+  font-size: 10rem;
+  font-family:'Raleway', cursive;
+  margin-left: 10%;
+
+}
+
+#show{
+  background-color: black;
+  padding-bottom: 3%;
+
+}
+
+#show h2{
+  font-family: 'Lobster', cursive;
+  color: #fa056d;
+  font-size: 2.5rem;
+  margin-top: 20%;
+  text-align: center;
+}
+
+#show img{
+  width: 50%;
+  margin-left: 25%;
+}
+
+#show p{
+  text-align: center;
+  margin-left: 2.5%;
+}
+#show a, #show a:visited{
+  font-family: 'Raleway', cursive;
+  font-size: 1.3rem;
+  padding-right: 5%;
+  text-decoration: none;
+  color: white;
+
+}
+
+#show a:hover{
+  color: #fa056d;
+}
+
+#footer{
+  padding-top: 10%;
+  margin-top: 4%;
+  background-color: #707070;
+  position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#footer p{
+  float: right;
+  padding-right: 5%;
+  font-size: 1.2rem;
+  font-family:'Raleway', cursive;
+  color: white;
+}

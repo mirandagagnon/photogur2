@@ -3,12 +3,28 @@
 <head>
   <title>Photogur2.0</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class = "page-wrapper">
+  <div id = "header">
+      <i class="fa fa-camera-retro"></i>
+      <h1>Photogur 2.0</h1>
+    <div id="new-photo">
+      <p><%= link_to "New Photo", new_photo_path %></p>
+    </div>
+  </div><!--end header div-->
 
-<%= yield %>
+  <%= yield %>
+
+  <div id = "footer">
+    <p class="copyright">&copy; Miranda Gagnon, 2015</p>
+  </div><!--end footer-->
 
 </body>
 </html>
